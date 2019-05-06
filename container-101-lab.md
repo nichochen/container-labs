@@ -20,13 +20,23 @@ In this lab, you will be learning some basics on containers.
 ## Helper
 - [Docker CheatSheet](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf)
 
-## 1 Install Azure CLI
+## 1 Azure CLI
 
-Follow the instructions of following link to install Azure CLI
+You will need to use Azure CLI to complete the labs, you may use Azure Cloud Shell, or install Azure CLI locally on your host.
+
+### 1.1 Azure Cloud Shell
+
+Open following link to access Azure Cloud Shell. Login with your Azure account credentials.
+> https://shell.azure.com
+
+## 1.2 Install Azure CLI
+Follow the instructions of following link to install Azure CLI locally on your host.
 > https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
 
+
+
 ## 2 Create Lab host
-Login to Azure with Azure CLI.
+Login to Azure with Azure CLI. If you are using Azure Cloud Shell, you are logged in by default, you can skip this step.
 
     $ az login
 
@@ -54,7 +64,7 @@ If everything goes well, you should see following output.
     containers-101    VM running    13.70.1.93                  10.0.0.4            00-0D-3A-80-1E-7F  eastasia
 
 Run command `az vm show`, you will see the summery information of the newly created VM `container-lab`. Make a note of the public IP address of the virtual machine.
- 
+
     $ az vm show -g containers-101 -n container-lab -o table
     Name           ResourceGroup    PowerState    PublicIps    Fqdns    Location    Zones
     -------------  ---------------  ------------  -----------  -------  ----------  -------
