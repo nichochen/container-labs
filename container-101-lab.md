@@ -316,7 +316,8 @@ To verify the published image works, you can try downloading and running the ima
     # docker rm $(docker ps -aq)
 
 Delete all local images.
-
+    
+    # docker rmi labregistry8197.azurecr.io/my-nginx:1.0
     # docker rmi $(docker images -q)
 
 Verify all images are gone.
