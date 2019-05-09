@@ -65,7 +65,7 @@ If everything goes well, you should see following output.
 
 Run command `az vm show`, you will see the summery information of the newly created VM `container-lab`. Make a note of the public IP address of the virtual machine.
 
-    $ az vm show -g containers-101 -n container-lab -o table
+    $ az vm show -g containers-101 -n container-lab -d -o table
     Name           ResourceGroup    PowerState    PublicIps    Fqdns    Location    Zones
     -------------  ---------------  ------------  -----------  -------  ----------  -------
     container-lab  containers-101    VM running    13.70.1.93            eastasia
